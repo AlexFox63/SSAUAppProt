@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar" />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/Sign_Up_Lay_Img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lay_log_pass"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/Sign_Up_Lay_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/sign_up_login"
+                        android:background="@drawable/border"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:hint="Логин"
+                        android:inputType="textPersonName" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                        <Button
+                            android:id="@+id/sex_male"
+                            android:textSize="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="М" />
+                        <Button
+                            android:id="@+id/sex_female"
+                            android:textSize="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="Ж" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/sign_up_pass"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:hint="Пароль"
+                        android:inputType="textPassword" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/picked_date"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/border"
+                        android:hint="Дата рождения"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textSize="12sp"
+                        android:inputType="date" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_name_phone"
+                android:orientation="vertical"
+                android:layout_below="@id/lay_log_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sign_up_phone"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:hint="Номер телефона"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/proff"
+                android:layout_below="@id/lay_name_phone"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                    <Button
+                        android:id="@+id/student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Студент" />
+                    <Button
+                        android:id="@+id/star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Староста" />
+                    <Button
+                        android:id="@+id/proforg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Профорг" />
+                    <Button
+                        android:id="@+id/face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Manager" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_below="@id/proff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button_sign_up"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:text="Зарегистрироваться" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

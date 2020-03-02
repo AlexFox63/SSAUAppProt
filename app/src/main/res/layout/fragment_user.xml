@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:id="@+id/rellay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    >
+    <RelativeLayout
+        android:id="@+id/profile_image"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle"
+        >
+        <TextView
+            android:id="@+id/text_view_user_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/user_photo"
+            android:gravity="center"
+            android:maxEms="1"
+            android:textSize="50sp"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_up_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/colorBase" />
+    
+    <ImageButton
+        android:id="@+id/user_settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_exit"/>
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/linlay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rellay1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/money">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textColor="@color/colorBase"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Стипендия"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textColor="@color/colorBase"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/money">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_student_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textColor="@color/colorBase"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Группа"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textColor="@color/colorBase"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/linlay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Телефон"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:id="@+id/user_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#FF0000"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#808080"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/list_classmates"
+                    android:background="@drawable/border"
+                    android:layout_gravity="center"
+                    android:text="@string/my_classMates"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+</RelativeLayout>
